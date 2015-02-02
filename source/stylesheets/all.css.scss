@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+body {
+  background: #d4d4d4 url("../images/background.png");
+  text-align: center;
+  font-family: sans-serif; }
+
+h1 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  margin: 0; }
+
+h2{
+	color: rgba(239,76,125,.5);
+	font-weight: bold;
+    font-size: 24px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	margin: 0; 
+}
+
+h4 {
+  color: rgba(0, 0, 0, .2);
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  margin: 0;
+}
+
+p{
+	color: rgba(0, 0, 0, .3);
+}
+
+c{
+	color: rgba(239,76,125,.3);
+}
+ 
+.main{
+	text-align: left;
+	padding: 3%;
+	
+	h1, h2, h3, h4{
+		text-align: left;
+	}
+}
+  
+.nav{
+	background: #b1e0e5 url("../images/logosml.png") no-repeat left 20px;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 15px;
+	font-family: sans-serif;
+	position: left;
+	overflow: auto;
+	width: 100%;
+	height: 100px;
+	
+	li{
+		display: inline-block;
+	}
+	.links{
+	
+		float: right;
+		padding-right: 40px;
+		padding-top: 15px;
+		width: 500px;
+		height: 100px;
+		position: right;
+	}
+	
+	h1{
+		color: rgba(239,76,125,.7);
+	}
+	
+	h4{
+		color: rgba(239,76,125,0);
+	}
+}
+
+
+.doc {
+	padding: 10px 0 10px;
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.zoom{
+  animation-name: welcome;
+  animation-duration: .9s; 
+}
+
+.welcome {	
+	h1{
+		  background: url("../images/middleman.png") no-repeat center 100px;
+		  padding: 350px 0  0px;
+	}
+  
+  }
+
+@keyframes welcome {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    transform: scale(1.03);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+  
+a:link{
+	  color: rgba(0, 0, 0, .3);
+	  text-decoration: none;
+  }
+a:visited{
+	  color: rgba(0, 0, 0, .4);
+	  text-decoration: none;
+  }
+ a:hover{
+	 color: rgba(0, 0, 0, .4);
+	 text-decoration: none;
+ }
