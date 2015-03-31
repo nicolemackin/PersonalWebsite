@@ -1,6 +1,11 @@
 ---
 title: Creation Nation
+layout: base
 ---
+
+<% content_for :head do %>
+  <%= stylesheet_link_tag "front", "all" %>
+<% end %>
 
 <div class="welcome zoom">
   <h1>Nicole Mackin</h1>
@@ -9,7 +14,7 @@ title: Creation Nation
  	<%= link_to "About", "about.html" %>
 	<%= link_to "Portfolio", "portfolio.html" %>
     <%= link_to "Github", "https://github.com/nicolemackin" %>
-	<%= link_to "LinkedIn", "http://ca.linkedin.com/in/nicolemackin/en" %>
+	<%= link_to "LinkedIn", "http://ca.linkedin.com/in/nicolemackin" %>
 	<%= link_to "Google+", "https://plus.google.com/u/0/111815590456557022589/" %>
   </p><!-- .doc -->
 </div><!-- .welcome -->

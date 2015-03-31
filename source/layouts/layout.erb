@@ -1,20 +1,17 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Nicole Mackin" %></title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag "front", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-
-  <body class="<%= page_classes %>">
+<% wrap_layout :base do %>
+  <nav>
+  		<div class="nicole">
+  	  	<a href="index.html"><h1 class="ttl">Nicole Mackin</h1></a>
+  		</div><!-- .nicole -->
+  		<ul class="chrome">
+  			<li><%= link_to "About", "about.html" %></li>
+  			<li><%= link_to "Portfolio", "portfolio.html" %></li>
+  			<li><%= link_to "Github", "https://github.com/nicolemackin" %></li>
+  			<li><%= link_to "LinkedIn", "http://ca.linkedin.com/in/nicolemackin" %></li>
+  			<li><%= link_to "Google+", "https://plus.google.com/u/0/111815590456557022589/" %></li>
+  		</ul>
+  </nav>
+  <div class="main">
     <%= yield %>
-  </body>
-</html>
+  </div>
+<% end %>
