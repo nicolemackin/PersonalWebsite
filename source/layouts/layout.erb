@@ -1,4 +1,5 @@
 <% wrap_layout :base do %>
+
   <nav>
   		<div class="nicole">
   	  	<a href="index.html"><h1 class="ttl">Nicole Mackin</h1></a>
@@ -11,7 +12,16 @@
   			<li><%= link_to "Google+", "https://plus.google.com/u/0/111815590456557022589/" %></li>
   		</ul>
   </nav>
+
   <div class="main">
     <%= yield %>
   </div>
+
+  <footer>
+  	<ul class="chrome">
+  		<li>Ottawa Ontario || Lyon France</li>
+  		<li><%= mail_to "nicole.mackin@carleton.ca" %></li>
+  	</ul>
+  </footer>
+
 <% end %>

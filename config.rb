@@ -53,7 +53,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-# activate :autoprefixer
+activate :autoprefixer
 
 # Build-specific configuration
 configure :build do

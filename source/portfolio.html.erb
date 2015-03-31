@@ -1,15 +1,13 @@
 ---
 title: Portfolio
 ---
+<% content_for :head do %>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/dimsemenov/PhotoSwipe/v4.0.7/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/dimsemenov/PhotoSwipe/v4.0.7/dist/default-skin/default-skin.css">
+  <script src="https://cdn.rawgit.com/dimsemenov/PhotoSwipe/v4.0.7/dist/photoswipe-ui-default.min.js"></script>
+  <script src="https://cdn.rawgit.com/dimsemenov/PhotoSwipe/v4.0.7/dist/photoswipe.min.js"></script>
+<% end %>
 
-<div class="nav">
-  <h1>Nicole Mackin</h1>
-  <h4>Artist || Programmer || Dreamer</h4>
-  <p class="doc">
- 	<%= link_to "About", "about.html" %>
-	<%= link_to "Portfolio", "portfolio.html" %>
-    <%= link_to "Github", "https://github.com/nicolemackin" %>
-	<%= link_to "LinkedIn", "http://ca.linkedi.com/in/nicolemackin/en" %>
-	<%= link_to "Google+", "https://plus.google.com/u/0/111815590456557022589/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<%= partial :gallery %>
+
+<h2>Portfolio</h2>
