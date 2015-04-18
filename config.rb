@@ -57,6 +57,9 @@ activate :autoprefixer
 
 # Build-specific configuration
 configure :build do
+end
+configure :development do
+  activate :livereload, :apply_js_live => false
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

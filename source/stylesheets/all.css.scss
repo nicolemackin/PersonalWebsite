@@ -37,17 +37,13 @@ html, body {
 
 }
 
-body {
-  background-size: cover;
-  background-repeat:no-repeat;
-  background: linear-gradient( to bottom, #ffeae6,#ebebff);
-}
 .main{
 
 }
+
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: 300;
+  color: rgba(251, 75, 78, 1);
+  font-weight: 700;
   font-size: 2em;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -56,17 +52,19 @@ h1 {
   }
 
 h2{
-	color: rgba(0, 0, 0,.3);
-	font-weight: 300;
-    font-size: 1.5em;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+
+  color: #8cd3d7;
+  opacity: .6;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 2px -2px 0 #F04D50;
 	margin: 0;
 }
 h3{
   color: rgba(0, 0, 0,.3);
-	font-weight: 300;
+	font-weight: 600;
     font-size: 1.2em;
 	letter-spacing: -1px;
 	text-transform: uppercase;
@@ -75,8 +73,8 @@ h3{
 }
 
 h4 {
-  color: rgba(0, 0, 0, .2);
-  font-weight: 300;
+  color: rgba(66, 70, 81, 1);
+  font-weight: 600;
   font-size: 1em;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -91,11 +89,17 @@ ul{
   color: rgba(0, 0, 0, .3);
 }
 
-c{
-	color: rgba(0, 0, 0,.5);
+red{
+	color: #F04D50;
 }
-em{
-	color: rgba(0, 0, 0,.4);
+blue{
+	color: #8CD3D7;
+}
+green{
+  color: #21DE87;
+}
+black{
+  color: #424651;
 }
 
 body {
@@ -114,6 +118,7 @@ body {
 
   >nav{
     display: flex;
+    background: #F5F6F6;
     box-shadow: 0em -1.3em 1em 1em black;
 
     color: rgba(0, 0, 0, .3);
@@ -121,13 +126,37 @@ body {
   	width: 100%;
     line-height: 5rem;
 
-    background: #d4d4d4 url("../images/background.png");
 
     flex-direction: row;
 
-    .nicole{
-      padding-left: 6em;
-      background: url("../images/logosml.png") no-repeat 10%;
+    * {
+      align-self: center;
+    }
+
+    svg{
+      display: inline-block;
+      padding: 1em;
+      width: 2em;
+    }
+
+    h1 {
+      color: #8cd3d7;
+      font-weight: 700;
+      font-size: 2em;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      text-shadow: 5px -5px 0 #F04D50;
+      margin: 0;
+    }
+    h4 {
+      display: inline-block;
+      color: rgba(66, 70, 81, 1);
+      font-weight: 400;
+      font-size: 1.28em;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+      margin: 0;
     }
   	>ul{
 
@@ -177,19 +206,24 @@ body {
 
 .doc {
   font-size: 14px;
+
+  a {
+    padding: 0;
+    color: rgba(66, 70, 81, .5);
+  }
+  a:hover {
+    color: rgba(66, 70, 81, 1);
+  }
+  a::before,
+  a:last-child::after {
+    opacity: .9;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•";
+  }
 }
-.doc:before,
-.doc:after {
-  opacity: .2;
-  padding: 6px;
-  font-style: normal;
-  position: relative;
-  content: "•";
-}
-.doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+
 
 .zoom{
   animation-name: welcome;
@@ -197,14 +231,6 @@ body {
 }
 
 // ANIMATION
-
-.welcome {
-	h1{
-		  background: url("../images/middleman.png") no-repeat center 100px;
-		  padding: 350px 0  0px;
-	}
-
-  }
 
 @keyframes welcome {
   from {
@@ -230,14 +256,14 @@ a{
 }
 
 a:link{
-	  color: rgba(0, 0, 0, .3);
+	  color: rgba(66, 70, 81, .5);
 	  text-decoration: none;
   }
 a:visited{
-	  color: rgba(0, 0, 0, .4);
+	  color: rgba(66, 70, 81, .7);
 	  text-decoration: none;
   }
  a:hover{
-	 color: rgba(0, 0, 0, .4);
+	 color: rgba(66, 70, 81, 1);
 	 text-decoration: none;
  }
