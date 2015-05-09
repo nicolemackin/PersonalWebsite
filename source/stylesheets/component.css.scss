@@ -4,6 +4,10 @@
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
+
+	&, * {
+		box-sizing: border-box;
+	}
 }
 
 .og-grid li {

@@ -3,7 +3,7 @@
 html, body {
   margin:0; padding:0; border:0;
   min-width:100%; min-height:100vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .chrome {
@@ -49,6 +49,7 @@ h1 {
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   margin: 0;
+  text-align: center;
   }
 
 h2{
@@ -56,11 +57,12 @@ h2{
   color: #8cd3d7;
   opacity: .6;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 3em;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-shadow: 2px -2px 0 #F04D50;
 	margin: 0;
+  text-align: center;
 }
 h3{
   color: rgba(0, 0, 0,.3);
@@ -70,6 +72,7 @@ h3{
 	text-transform: uppercase;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 	margin: 0;
+  text-align: center;
 }
 
 h4 {
@@ -80,6 +83,7 @@ h4 {
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   margin: 0;
+  text-align: center;
 }
 
 p{
